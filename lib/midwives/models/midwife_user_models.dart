@@ -12,6 +12,7 @@ class MidWifeUserModels {
   String cityValue;
   String stateValue;
   String midWifeImage;
+  String professional;
 
   MidWifeUserModels(
       {required this.approved,
@@ -26,7 +27,8 @@ class MidWifeUserModels {
       required this.countryValue,
       required this.cityValue,
       required this.stateValue,
-      required this.midWifeImage});
+      required this.midWifeImage,
+      required this.professional});
 
   MidWifeUserModels.fromJson(Map<String, Object?> json)
       : this(
@@ -43,6 +45,7 @@ class MidWifeUserModels {
           cityValue: json['cityValue']! as String,
           stateValue: json['stateValue']! as String,
           midWifeImage: json['midWifeImage']! as String,
+          professional: json['professional']! as String,
         );
 
   Map<String, Object?> toJson() {
@@ -60,6 +63,7 @@ class MidWifeUserModels {
       'stateValue': stateValue,
       'midWifeImage': midWifeImage,
       'midWifeId': midWifeId,
+      'professional': professional
     };
   }
 }

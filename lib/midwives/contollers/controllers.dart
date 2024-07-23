@@ -74,7 +74,8 @@ class MidwifeController {
         'villageTown': villageTown,
         'midWifeImage': midWifeImage,
         'approved': false,
-        'midWifeId': _auth.currentUser!.uid
+        'midWifeId': _auth.currentUser!.uid,
+        'professional': 'professional',
       });
 
       ;
